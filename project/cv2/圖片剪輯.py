@@ -1,0 +1,17 @@
+import numpy as np
+import cv2
+img = cv2.imread('abc.jpg', cv2.IMREAD_COLOR)
+lower_red_2 = np.array([140,110,142]) 
+upper_red_2 = np.array([151,120,158])
+lower_red_3 = np.array([140,110,140]) 
+upper_red_3 = np.array([170,130,255])
+lower_red_4 = np.array([170,130,155]) 
+upper_red_4 = np.array([180,160,255])
+red_mask2 = cv2.inRange(img, lower_red_2, upper_red_2)
+red_mask3 = cv2.inRange(img, lower_red_3, upper_red_3) 
+red_mask4 = cv2.inRange(img, lower_red_4, upper_red_4) 
+red_mask = cv2.bitwise_or(red_mask3,red_mask2) 
+cv2.imshow("red_mask", red_mask4) 
+cv2.imshow("red_mask1",img) 
+#cv2.imshow("test", img)
+cv2.waitKey(0)
