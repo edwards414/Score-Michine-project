@@ -52,13 +52,13 @@
 
 ## 網頁設計
  
-我是使用了google-excel(當成資料庫),利用javascript讀取資料庫內的資訊並在網頁上面呈現,網頁可以對成績表做查詢,也有做RWD設計各個裝置都可以使用
+我使用了google-excel(當成資料庫),利用javascript讀取資料庫並在網頁上面呈現,網頁可以對成績表做查詢,也做RWD設計讓各個裝置都可以使用
 
 > 網站介紹: [點我!!查詢請輸入【段考二】](https://script.google.com/macros/s/AKfycbwUPB8av8gJiDm0B71revtbjKE4klsRZkYY4DOG9oE/dev)
 
 ![](/total_picture/網頁.PNG)
 > 
->使用google-api讓python能與google-excel連上
+>使用google-api讓python能與google-excel連結
 >
 
 ## 使用方法/示例
@@ -254,6 +254,8 @@ setDirection(130)
 
 ![](/total_picture/led.png)
 
+
+> 解決方式: [點我](https://dordnung.de/raspberrypi-ledstrip/ws2812)
 > Video: [SPI錯誤](https://youtube.com/shorts/EJO2xfDEh9g)
 
 ### 3.PMIC 損毀
